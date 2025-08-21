@@ -16,6 +16,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     // Se toma siempre como válido según la consigna
     alert('Autenticación exitosa. Redireccionando...');
 
-    // Redirecciona al sitio de portada
+    localStorage.setItem('sesionIniciada', 'true');
     window.location.href = 'index.html'; // Cambia 'index.html' por la URL de tu sitio de portada
 });
+

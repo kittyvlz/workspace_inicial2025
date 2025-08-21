@@ -4,34 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercado Login</title>
-    <link rel="stylesheet" href="stilo.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <div class="bloque">
 
-    <div class="container">
-        <div class="left-side">
-            <div class="logo">
-                <img src="login.png" alt="Mercado Logo">
-            </div>
-        </div>
+        <div class="star_bloque"></div>
 
-        <div class="right-side">
-            <h2>BIENVENIDO</h2>
-            <form id="loginForm">
-                <div class="input-group">
-                    <label for="username">USUARIO</label>
-                    <input type="text" id="username" placeholder="Usuario" required>
+        
+        <div class="end_bloque">
+            <form id="loginForm" class="formulario">
+                <div class="caja-form">
+                    <h1>Bienvenido</h1>
+                    <label class="controles">
+                        <input type="text" id="username" name="username" placeholder="Usuario" required>
+                    </label>
+                    <label class="controles">
+                        <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                    </label>
+                    <div>
+                        <button type="submit" class="boton">INGRESAR</button>
+                    </div>
+
                 </div>
-                <div class="input-group">
-                    <label for="password">CONTRASEÑA</label>
-                    <input type="password" id="password" placeholder="Contraseña" required>
-                </div>
-                <button type="submit">INGRESAR</button>
             </form>
         </div>
     </div>
-
-    <script src="login.js"></script>
-
+    <script src="js/login.js"></script>
 </body>
 </html>
+
+

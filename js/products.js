@@ -30,3 +30,5 @@ function showProducts(products) {
 
   document.getElementById("products-container").innerHTML = htmlContentToAppend;
 }
+
+

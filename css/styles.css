@@ -1,110 +1,283 @@
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+*{
     margin: 0;
-    background-color: #f0f0f0;
-}
-
-.container {
-    display: flex;
-    width: 800px;
-    height: 400px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.left-side {
-    flex: 1;
-    background-image: url('toys_index.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    position: relative;
-}
-
-.left-side::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3); /* Capa oscura para mejor legibilidad */
-}
-
-.logo {
-    z-index: 1;
-}
-
-.logo img {
-    max-width: 250px;
-    border-radius: 10%;
-}
-
-.logo p {
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-.right-side {
-    flex: 1;
-    background-color:#5d6159;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-}
-
-.right-side h2 {
-    margin-bottom: 20px;
-    font-size: 2.5em;
-    font-weight: normal;
-}
-
-.input-group {
-    margin-bottom: 15px;
-    width: 80%;
-}
-
-.input-group label {
-    display: none;
-}
-
-.input-group input {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
+    padding: 0;
     box-sizing: border-box;
-    background-color: #888;
-    color: white;
-    font-size: 1em;
+    font-family: 'verdana';
 }
 
-.input-group input::placeholder {
-    color: #ccc;
+/*login*/
+
+.bloque {
+display: flex;
+height: 100vh;
+margin: 0px;
+padding: 0px;
+overflow: hidden;
 }
 
-button {
-    width: 80%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #ff9900;
-    color: white;
-    font-size: 1.1em;
-    cursor: pointer;
-    margin-top: 20px;
+.star_bloque {
+display: flex;
+width: 100%;
+height: 100%;
+background-image: url('../img/toys_indexPORTADA.jpg');
+background-repeat: repeat;
+background-position: center;
+background-size: auto;
+    
 }
 
-button:hover {
-    background-color: #e68a00;
+.end_bloque {
+display: flex;
+background-color: #535b54;
+padding: 20px;
+width: 100%;
+height: 100%;
+justify-content: center;
 }
+
+.formulario {
+display: block;
+justify-content: center;
+align-content: center;
+width: 350px;
+}
+
+.caja-form {
+background-color: #626C66;
+border-radius: 8px;
+padding: 40px;
+box-shadow: 0 4px 8px #2a2828;
+height: auto;
+text-align: center;
+height: 350px;
+}
+
+
+.caja-form h1 {
+font-size: 2rem;
+margin: 32px;
+color:#f2efe9 ;
+}
+
+.controles>input {
+width: 90%;
+background: #c5c5c5;
+border-radius: 8px;
+margin-bottom: 1rem;
+padding: 10px;
+justify-items: start;
+}
+
+.controles input:hover {
+background-color: rgb(248, 244, 245);
+}
+
+.boton {
+justify-items: center;
+font-size: 1.1rem;
+background-color: #dc7712;
+border-radius: 8px;
+border: 1px solid #fff;
+color: #fff;
+padding: 6px 15px;
+font-weight: 600;
+text-decoration: none;
+margin-top: 20px;
+
+}
+/* PRODUCT */
+.jumbotron,
+.card-body,
+.container,
+.site-header {
+  font-family: 'Verdana', serif !important;
+}
+
+p.text-danger.fw-bold {
+  color: #ea7317 !important;
+}
+
+.jumbotron .display-4 {
+  font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.jumbotron {
+  height: 50vh;
+  padding: 5em inherit;
+  margin-bottom: 0;
+  background-color: #53C0FB;
+  background: url('../img/cover_back.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: black;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  text-shadow: 1px 1px 2px grey;
+}
+
+.jumbotron .lead {
+  font-size: 38px;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+.site-header a {
+  color: white;
+  transition: ease-in-out color .15s;
+}
+
+.site-header .dropdown-menu a {
+  color: black;
+}
+
+.dropzone {
+  border: 2px dashed #0087F7;
+  border-radius: 5px;
+  background: white;
+}
+
+.img-fit {
+  max-height: 100%;
+}
+
+.alert {
+  position: fixed;
+  top: 80px;
+  width: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+  top: 50%;
+  left: 50%;
+}
+
+.cursor-active {
+  cursor: pointer;
+}
+
+.left {
+  float: left;
+  padding: 4px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 51px;
+  height: 51px;
+  margin: 6px;
+  border: 6px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+#spinner-wrapper {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1021;
+  display: none;
+}
+
+main {
+  min-height: calc(100vh - 210px);
+}
+
+a.custom-card,
+a.custom-card:hover {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.checked {
+  color: orange;
+}
+
